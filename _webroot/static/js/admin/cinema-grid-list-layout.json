@@ -1,0 +1,58 @@
+{
+	"information": {
+		"id": "CINEMA_LIST",
+		"caption": "극장 리스트",
+		"type": "LIST",
+		"width": "100%",
+		"height": "400",
+		"event": "C,D",
+		"sort": "AB",
+		"pageYn": "Y",
+		"pageDisplay": "10",
+		"ctrlFn": "fnCtrlFunction",
+		"cls": "ne_table table-hover"
+	},
+	"fields": [
+		{
+			"id": "no",
+			"name": "No",
+			"width": "5%"
+		},	
+		{
+			"id": "cinemaCode",
+			"name": "극장코드",
+			"width": "10%"
+		},
+		{
+			"id": "cinemaName",
+			"name": "극장명",
+			"width": "30%"
+		},
+		{
+			"id": "cinemaGubun",
+			"name": "운영구분코드",
+			"width": "10%"
+		},		
+		{
+			"id": "cinemaGubunNm",
+			"name": "운영구분",
+			"width": "10%"
+		},
+		{
+			"id": "groupCode",
+			"name": "지역구분",
+			"width": "10%"
+		},
+		{
+			"id": "groupName",
+			"name": "지역명",
+			"width": "10%"
+		},						
+		{
+			"id": "addr",
+			"name": "주소",
+			"width": "30%"
+		}			
+		
+	]
+}

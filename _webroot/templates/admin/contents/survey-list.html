@@ -1,0 +1,32 @@
+<script type="text/javascript" src="/js/admin/survey-list.js" charset="UTF-8"></script>
+
+<!-- 탭 컨텐츠 시작 -->
+<div id="G_HEADER_FIEXD_EDGE">
+  <!-- 상단 고정된 영역 -->
+  <form name="fmSrch" id="fmSrch">
+    <!-- 현재페이지 -->
+    <input type="hidden" name="pageNumber" id="pageNumber" value="" />
+    <!-- 한페이지 레코드 수 -->
+    <input type="hidden" name="pageLimit" id="pageLimit" value="" />
+    <!-- 정렬 방법 -->
+    <input type="hidden" name="orderBy" id="orderBy" value="" />
+  </form>
+
+  <div class="blue_box_wrap">
+    <div class="blue_box">
+      <div>
+        <select id="srch_type" name="srch_type" style="width: 120px;">
+          <option value="user_nm">설문명</option>
+          <option value="user_id">설문코드</option>
+        </select> <input name="srch_text" id="srch_text" value="" placeholder="검색어" style="width: 200px;" data-required="true" />
+      </div>
+    </div>
+  </div>
+  
+  <div style="height: 10px;"></div>
+  
+</div>
+
+<div id="G_CONTENTS_EDGE" class="contents">
+  <div id="ctrl_SURVEY_LIST" class="list_edge"></div>
+</div>

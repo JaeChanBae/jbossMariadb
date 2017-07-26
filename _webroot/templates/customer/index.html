@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<head>
+<title>영화인지도조사 - 고객</title>
+
+<div th:replace="/customer/fragments/header :: header-css" />
+<div th:replace="/customer/fragments/header :: header-js" />
+</head>
+<body>
+
+  <div th:replace="/customer/fragments/header :: header" />
+
+  <div class="container">
+
+    <div class="starter-template">
+      &nbsp;내용
+      <!--
+      
+        <h1>관리자용 page (Spring Security protected)</h1>
+        
+        <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+      -->
+
+      <!--
+      <p th:text="Hello World!" />
+      -->
+      <h1 th:inline="text">Hello
+        [[${#httpServletRequest.remoteUser}]]!</h1>
+      <br /> <br /> <br />
+      <sec:authentication property="Authorities" />
+
+
+      [[ <span sec:authentication="name"></span> ]] <span
+        sec:authentication="principal.authorities"></span>
+
+      <div sec:authorize="hasAuthority('ROLE_ADMIN')">- only
+        admin!!!!</div>
+      <div sec:authorize="hasAuthority('ROLE_USER')">- only user</div>
+
+      <form th:action="@{/admin/logout}" method="post">
+        <input type="submit" value="Sign Out" />
+      </form>
+
+      <a th:attr="href=@{/admin/index}">admin</a> <a th:attr="href=@{/customer/index}">user</a>
+
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <div th:replace="/customer/fragments/footer :: footer" />
+
+</body>
+</html>

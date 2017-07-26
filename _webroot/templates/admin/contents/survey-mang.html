@@ -1,0 +1,35 @@
+<script type="text/javascript" src="/js/admin/survey-mang.js"
+  charset="UTF-8"></script>
+
+<div class="frame-wrapper">
+    <div class="frame-inner">
+        <div class="frame-left" id="id_frame_left">
+            <div class="tab_wrap" id="product_form_tab">
+                <ul class="tab">
+                    <li onclick="PD_Common.fnTabActive(this);fnTabClick_SurveyMang({type:'survey-list'});" class="on">
+                        <span>&nbsp;설문리스트</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="G_CONTENTS_EDGE_LEFT" style="padding:10px;"></div>
+        </div>
+        <div class="frame-center">
+            <button type="button" id='FRAME_HORIZONTAL_TWO_DIVISION_BAR' class="btn btn-xs btn-default-gray" style='cursor:ew-resize;'>
+                <i class="fa fa-arrows-h"></i>
+            </button>
+        </div>
+        <div class="frame-right" id="id_frame_right">
+            <div class="tab_wrap" id="product_form_tab">
+                <ul class="tab">
+                    <li onclick="PD_Common.fnTabActive(this);fnTabClick_SurveyMang({type:'survey-form1'});" class="on">
+                        &nbsp;설문정보
+                    </li>
+                    <li onclick="PD_Common.fnTabActive(this);fnTabClick_SurveyMang({type:'survey-form2'});">
+                        &nbsp;대상자정보
+                    </li>
+                </ul>
+            </div>
+            <div id="G_CONTENTS_EDGE_RIGHT" style="padding:10px;"></div>
+        </div>
+    </div>
+</div>
